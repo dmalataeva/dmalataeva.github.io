@@ -1,0 +1,32 @@
+body{
+	background-color: #181818;
+}
+
+div.myStyle {
+	font-family: 'Lekton', sans-serif;
+	text-align: center;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+}
+
+h1 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	text-decoration: line-through;
+	color: #e2e2e2;
+	font-size: 300px;
+	line-height: 40px;
+	padding-bottom: 30px;
+}
+
+h2 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	text-decoration: underline;
+	color: #e2e2e2;
+	font-size: 100px;
+	line-height: 40px;
+	padding-bottom: 30px;
+}
