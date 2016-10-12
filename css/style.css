@@ -1,6 +1,5 @@
 body{
 	background-color: #f2f2f2;
-	padding-top: 60px;
 }
 
 div.myStyle {
@@ -31,8 +30,6 @@ h2 {
 	text-decoration: underline;
 	color: #e2e2e2;
 	font-size: 100px;
-	line-height: 40px;
-	padding-bottom: 30px;
 }
 
 p {
@@ -84,12 +81,18 @@ div.cropped {
 	display: inline;
 	width: 25%;
 	padding-top: 25%;
-	background-position: center center;
+	min-height: 200px;
+	min-width: 200px;
 	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
-div.cropped:hover {
-	opacity: 0.5;
+#thumbnail:hover div {
+	filter: brightness(50%);
+	-webkit-transition: filter .5s ease;
+	-moz-transition: filter .5s ease;
+	
 }
 
 img.thumbnail{

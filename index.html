@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>dmalataeva</title>
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap links -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 
@@ -16,109 +16,90 @@
 	<link href='https://fonts.googleapis.com/css?family=Lekton' rel='stylesheet' type='text/css'>
   </head>
 
-  <!--The body is where you want to put most of your stuff-->
-  <body style="background:#000000">
+  <!--====================================BODY===STARTS=========================================-->
+  <body>
 
-  
-	<!--<div class="introduction col-sm-12">
-		<img src="introduction.png" style="width:100%;height:100%;object-fit:contain">
-	</div>-->
+		<div class="col-sm-12" style="background-color:#d2d2d2">
+			<h2 class="text-center">Hello again...</h2>
+			<h3 class="text-center">Deniza is gone for the meantime</h3>
+		</div>
 
+
+	<!-- Image Grid START -->
+
+		<a href="#img1" id="thumbnail">
+			<div class="cropped col-sm-3" style="background-image: url(lightbox/1.png)">
+			</div>
+		</a>
+		<a href="#img2"  id="thumbnail">
+			<div class="cropped col-sm-3" style="background-image: url(lightbox/2.png)">
+			</div>
+		</a>
+		<a href="#img3"  id="thumbnail">
+			<div class="cropped col-sm-3" style="background-image: url(lightbox/3.png)">
+			</div>
+		</a>
+		<a href="#img4"  id="thumbnail">
+			<div class="cropped col-sm-3" style="background-image: url(lightbox/4.png)">
+			</div>
+		</a>
+		
+		<a href="#img5"  id="thumbnail">
+			<div class="cropped col-sm-3" style="background-image: url(lightbox/5.png)">
+			</div>
+		</a>
+		<a href="#img6"  id="thumbnail">
+			<div class="cropped col-sm-3" style="background-image: url(lightbox/6.png)">
+			</div>
+		</a>
+		<a href="#img7"  id="thumbnail">
+			<div class="cropped col-sm-3" style="background-image: url(lightbox/7.png)">
+			</div>
+		</a>
+		<a href="#img8"  id="thumbnail">
+			<div class="cropped col-sm-3" style="background-image: url(lightbox/8.png)">
+			</div>
+		</a>
+		
+	<!-- Image Grid END -->
+
+	<!-- Image Grid Links to Lightboxes START -->
+		
+		<a href="#_" class="lightbox" id="img1">
+		  <img src="lightbox/1.png">
+		</a> 
+		<a href="#_" class="lightbox" id="img2">
+		  <img src="lightbox/2.png">
+		</a> 
+		<a href="#_" class="lightbox" id="img3">
+		  <img src="lightbox/3.png">
+		</a> 
+		<a href="#_" class="lightbox" id="img4">
+		  <img src="lightbox/4.png">
+		</a> 
+		<a href="#_" class="lightbox" id="img5">
+		  <img src="lightbox/5.png">
+		</a> 
+		<a href="#_" class="lightbox" id="img6">
+		  <img src="lightbox/6.png">
+		</a> 
+		<a href="#_" class="lightbox" id="img7">
+		  <img src="lightbox/7.png">
+		</a> 
+		<a href="#_" class="lightbox" id="img8">
+		  <img src="lightbox/8.png">
+		</a> 
+		
+	<!-- Image Grid Links to Lightboxes END -->
+
+
+		<!-- jQuery files -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Compiled plugins (js files) -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src=js/bootstrap.js></script>
 	
-<!-- thumbnail image wrapped in a link -->
-
-<div class="container col-sm-12" style="display:block;background-color:#d2d2d2;height:200px">
-	<h2 style="display:block">Hello again...</h2>
-	<h3>Deniza is gone for the meantime</h3>
-</div>
-
-	<a href="#img1">
-	<div class="cropped col-sm-3" style="background: url(lightbox/1.png)">
-	</div>
-	</a>
-	<a href="#img2">
-	<div class="cropped col-sm-3" style="background: url(lightbox/2.png)">
-	</div>
-	</a>
-	<a href="#img3">
-	<div class="cropped col-sm-3" style="background: url(lightbox/3.png)">
-	</div>
-	</a>
-	<a href="#img4">
-	<div class="cropped col-sm-3" style="background: url(lightbox/4.png)">
-	</div>
-	</a>
-	
-	<a href="#img5">
-	<div class="cropped col-sm-3" style="background: url(lightbox/5.png)">
-	</div>
-	</a>
-	<a href="#img6">
-	<div class="cropped col-sm-3" style="background: url(lightbox/6.png)">
-	</div>
-	</a>
-	<a href="#img7">
-	<div class="cropped col-sm-3" style="background: url(lightbox/7.png)">
-	</div>
-	</a>
-	<a href="#img8">
-	<div class="cropped col-sm-3" style="background: url(lightbox/8.png)">
-	</div>
-	</a>
-	
-	
-	<!--
-	<a href="#img2">
-		<img src="lightbox/1.png" class="thumbnail">
-	</a>
-
-	<a href="#img3">
-		<img src="lightbox/2.jpg" class="thumbnail">
-	</a>
-
-
-	<a href="#_" class="lightbox" id="img1">
-		<img src="image.jpeg">
-	</a>
-	<a href="#_" class="lightbox" id="img2">
-		<img src="lightbox/1.png">
-	</a>
-	-->
-	
-	<a href="#_" class="lightbox" id="img1">
-	  <img src="lightbox/1.png">
-	</a> 
-	<a href="#_" class="lightbox" id="img2">
-	  <img src="lightbox/2.png">
-	</a> 
-	<a href="#_" class="lightbox" id="img3">
-	  <img src="lightbox/3.png">
-	</a> 
-	<a href="#_" class="lightbox" id="img4">
-	  <img src="lightbox/4.png">
-	</a> 
-	<a href="#_" class="lightbox" id="img5">
-	  <img src="lightbox/5.png">
-	</a> 
-	<a href="#_" class="lightbox" id="img6">
-	  <img src="lightbox/6.png">
-	</a> 
-	<a href="#_" class="lightbox" id="img7">
-	  <img src="lightbox/7.png">
-	</a> 
-	<a href="#_" class="lightbox" id="img8">
-	  <img src="lightbox/8.png">
-	</a> 
-	
-
-	
-<p class="italic small">Image credit: Me</p>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-	<script src=js/bootstrap.js></script>
-
 	</body>
+	
+	<!--=======================================BODY==ENDS==========================================-->
 </html>
