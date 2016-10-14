@@ -1,5 +1,5 @@
 body{
-	background-color: #f2f2f2;
+	background-color: #666699;
 }
 
 div.myStyle {
@@ -18,9 +18,9 @@ h1 {
 	font-style: italic;
 	text-decoration: line-through;
 	color: #e2e2e2;
-	font-size: 300px;
+	font-size: 400px;
 	line-height: 40px;
-	padding-bottom: 30px;
+	padding-bottom: 50px;
 }
 
 h2 {
@@ -30,13 +30,6 @@ h2 {
 	text-decoration: underline;
 	color: #e2e2e2;
 	font-size: 100px;
-}
-
-p {
-	font-family: 'Source Sans Pro', sans-serif;
-	color: #e2e2e2;
-	line-height: 10px;
-	font-size: 16px;
 }
 
 
@@ -104,4 +97,10 @@ img.thumbnail{
 	display: inline;
 	position: static;
 	z-index: 50;
+}
+
+p.myTitle{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #e2e2e2;
+	font-size: 18px;
 }
