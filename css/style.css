@@ -83,8 +83,9 @@ div.cropped {
 
 #thumbnail:hover div {
 	filter: brightness(50%);
-	-webkit-transition: filter .5s ease;
-	-moz-transition: filter .5s ease;
+	-webkit-transition-property: filter;
+	-webkit-transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
 	
 }
 
@@ -99,8 +100,16 @@ img.thumbnail{
 	z-index: 50;
 }
 
-p.myTitle{
-	font-family: 'Source Sans Pro', sans-serif;
+#myTitleLeft{
+	font-family: 'Montserrat', sans-serif;
 	color: #e2e2e2;
 	font-size: 18px;
+	display: none;
+}
+
+#myTitleRight{
+	font-family: 'Montserrat', sans-serif;
+	color: #e2e2e2;
+	font-size: 18px;
+	display: none;
 }

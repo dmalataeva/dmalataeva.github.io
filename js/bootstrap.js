@@ -24,7 +24,8 @@ if (typeof jQuery === 'undefined') {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
-
+/* SCROLL DOWN FOR CUSTOM SCRIPTS */
+ 
 +function ($) {
   'use strict';
 
@@ -2375,3 +2376,21 @@ if (typeof jQuery === 'undefined') {
   })
 
 }(jQuery);
+
+
+/* ===============================custom=========================================*/
+
+var artTitles = ["Concept Artist","Graphic Designer","Tea Enthusiast","Illustrator","Creative Consultant","Paper-cup Doodler","Sketching Athlete"];
+var techTitles = ["UI/UX Developer","Android Programmer","Coffee-powered Creativity Machine","Java Developer","Hackathon Athlete","QA Specialist","Proud CE"];
+$(document).ready(
+	function(){
+		$.each(artTitles,function(i,val){
+			return function(val){
+				$("#myTitleLeft").delay("slow").fadeIn("slow");
+				$("#myTitleLeft").text(val);
+				$("#myTitleLeft").delay("slow").fadeOut("slow");
+			}(val);
+		});
+	}
+)
+
