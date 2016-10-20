@@ -24,10 +24,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 300;
-	font-style: italic;
-	text-decoration: underline;
+	font-family: 'Montserrat', sans-serif;
 	color: #e2e2e2;
 	font-size: 40px;
 }
@@ -107,12 +104,19 @@ img.thumbnail{
 	display: none;
 }
 
-p{
+p#textIntro{
 	font-family: 'Montserrat', sans-serif;
 	color: #e2e2e2;
 	font-size: 14px;
 	display: none;
 }
+
+p{
+	font-family: 'Montserrat', sans-serif;
+	color: #e2e2e2;
+	font-size: 14px;
+}
+
 #textIntro{
 	padding-top: 5px;
 }

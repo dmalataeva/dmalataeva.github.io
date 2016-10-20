@@ -2400,7 +2400,7 @@ var iterationTitlesRight = function(){
 		function(){
 			$("#nameIntro").delay(1000).fadeIn(1000);
 			$("#textIntro").delay(2000).fadeIn(1000);
-			setInterval(iterationTitlesRight,3500);
+			setInterval(iterationTitlesRight,4000);
 		}
 	);
 
