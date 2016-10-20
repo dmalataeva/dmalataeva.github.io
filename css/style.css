@@ -120,3 +120,9 @@ p{
 #textIntro{
 	padding-top: 5px;
 }
+
+#introArrow{
+	color:#e2e2e2;
+	font-size: 20px;
+	display: none;
+}

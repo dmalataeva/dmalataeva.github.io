@@ -2387,21 +2387,27 @@ var t=0;
 
 	
 var iterationTitlesRight = function(){
-			$("#title").delay(500).fadeIn(500);
-			$("#title").text(titles[t]);
-			$("#title").delay(2000).fadeOut(500);
-			t++;
-			if (t===titles.length){
-				t=0;
-			}
-	};
+	$("#title").delay(250).fadeIn(500);
+	$("#title").text(titles[t]);
+	$("#title").delay(1000).fadeOut(500);
+	t++;
+	if (t===titles.length){
+		t=0;
+	}
+};
 
-	$(document).ready(
-		function(){
-			$("#nameIntro").delay(1000).fadeIn(1000);
-			$("#textIntro").delay(2000).fadeIn(1000);
-			setInterval(iterationTitlesRight,4000);
-		}
-	);
+$(document).ready(
+	function(){
+		$("#introName").delay(1000).fadeIn(500);
+		$("#textIntro").delay(2000).fadeIn(1000);
+		setInterval(iterationTitlesRight,2500);
+		$("#introArrow").delay(8000).fadeIn(500);
+	}
+);
+
+$("#introArrow").click(function() {
+$('html,body').animate({scrollTop: 
+	$("#doings").offset().top},'slow');
+});
 
 
