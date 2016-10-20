@@ -2380,37 +2380,27 @@ if (typeof jQuery === 'undefined') {
 
 /* ===============================custom=========================================*/
 
-var artTitles = ["Concept Artist","Graphic Designer","Tea Enthusiast","Illustrator","Creative Consultant","Paper-cup Doodler","Sketching Athlete"];
-var techTitles = ["UI/UX Developer","Android Programmer","Coffee-powered Creativity Machine","Java Developer","Hackathon Athlete","QA Specialist","Proud CE"];
+/*var artTitles = ["Concept Artist","Graphic Designer","Tea Enthusiast","Illustrator","Creative Consultant","Paper-cup Doodler","Sketching Athlete"];*/
+var titles = ["UI/UX Developer","Tea Enthusiast","Android Programmer","Coffee-powered Creativity Machine","Javascript Developer","Hackathon Athlete","QA Specialist","Paper-cup Doodler","Concept Artist","Proud CE"];
 var a=0;
 var t=0;
 
-var iterationTitlesLeft = function(){
-			$("#myTitleLeft").delay(500).fadeIn(1000);
-			$("#myTitleLeft").text(artTitles[a]);
-			$("#myTitleLeft").delay(2000).fadeOut(1000);
-			a++;
-			if (a===artTitles.length){
-				a=0;
-			}
-	};
 	
 var iterationTitlesRight = function(){
-			$("#myTitleRight").delay(500).fadeIn(1000);
-			$("#myTitleRight").text(techTitles[t]);
-			$("#myTitleRight").delay(2000).fadeOut(1000);
+			$("#title").delay(500).fadeIn(500);
+			$("#title").text(titles[t]);
+			$("#title").delay(2000).fadeOut(500);
 			t++;
-			if (t===techTitles.length){
+			if (t===titles.length){
 				t=0;
 			}
 	};
 
 	$(document).ready(
 		function(){
-			iterationTitlesRight.call();
-			setInterval(iterationTitlesRight,4500);
-			setTimeout(iterationTitlesLeft,500);
-			setInterval(iterationTitlesLeft,5000);
+			$("#nameIntro").delay(1000).fadeIn(1000);
+			$("#textIntro").delay(2000).fadeIn(1000);
+			setInterval(iterationTitlesRight,3500);
 		}
 	);
 
