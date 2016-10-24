@@ -25,7 +25,7 @@ if (typeof jQuery === 'undefined') {
  * ======================================================================== */
 
 /* SCROLL DOWN FOR CUSTOM SCRIPTS */
- 
+
 +function ($) {
   'use strict';
 
@@ -2385,11 +2385,11 @@ var titles = ["UI/UX Developer","Tea Enthusiast","Android Programmer","Coffee-po
 var a=0;
 var t=0;
 
-	
+
 var iterationTitlesRight = function(){
-	$("#title").delay(250).fadeIn(500);
+	$("#title").delay(250).fadeTo(500,1);
 	$("#title").text(titles[t]);
-	$("#title").delay(1000).fadeOut(500);
+	$("#title").delay(1000).fadeTo(500,0);
 	t++;
 	if (t===titles.length){
 		t=0;
@@ -2399,15 +2399,13 @@ var iterationTitlesRight = function(){
 $(document).ready(
 	function(){
 		$("#introName").delay(1000).fadeIn(500);
-		$("#textIntro").delay(2000).fadeIn(1000);
+    $("#textIntro").delay(3000).fadeIn(1000);
 		setInterval(iterationTitlesRight,2500);
 		$("#introArrow").delay(8000).fadeIn(500);
 	}
 );
 
 $("#introArrow").click(function() {
-$('html,body').animate({scrollTop: 
+$('html,body').animate({scrollTop:
 	$("#doings").offset().top},'slow');
 });
-
-

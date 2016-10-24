@@ -11,7 +11,7 @@ div.myStyle {
 
 
 	/** Text stuff */
-	
+
 h1 {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
@@ -55,7 +55,7 @@ a.lightbox {
 	top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-	
+
 }
 
 .lightbox:target {
@@ -83,7 +83,7 @@ div.cropped {
 	-webkit-transition-property: filter;
 	-webkit-transition-duration: 0.3s;
 	-webkit-transition-timing-function: ease-out;
-	
+
 }
 
 img.thumbnail{
@@ -101,7 +101,7 @@ img.thumbnail{
 	font-family: 'Montserrat', sans-serif;
 	color: #e2e2e2;
 	font-size: 18px;
-	display: none;
+	opacity: 0;
 }
 
 p#textIntro{
@@ -118,7 +118,7 @@ p{
 }
 
 #textIntro{
-	padding-top: 5px;
+padding-top: 5px;
 }
 
 #introArrow{
