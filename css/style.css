@@ -128,14 +128,23 @@ padding-top: 5px;
 	display: block;
 }
 
-/**#introArrow:hover{
-	color: #b30000;
-	opacity: 0.8;
-	-webkit-transition-property: color,opacity;
-	-webkit-transition-duration: 1s;
-}*/
-
 #introName{
 	min-width:500px;
-	display:none;
+	display:block;
+	width: 60%;
+	opacity: 0;
+}
+
+#resume{
+	padding-top:100px;
+}
+
+#resumeGlyph{
+	color: #e2e2e2;
+	font-size: 40px;
+	display: block;
+}
+
+#grid{
+	padding-top: 100px;
 }
