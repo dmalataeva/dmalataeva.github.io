@@ -2396,12 +2396,18 @@ var iterationTitlesRight = function(){
 	}
 };
 
+var blinkingArrow = function(){
+  $("#introArrow").fadeTo(500,1);
+  $("#introArrow").fadeTo(500,0);
+};
+
 $(document).ready(
 	function(){
 		$("#introName").delay(1000).fadeIn(500);
     $("#textIntro").delay(3000).fadeIn(1000);
 		setInterval(iterationTitlesRight,2500);
-		$("#introArrow").delay(8000).fadeTo(500,1);
+    $("#introArrow").delay(4500).fadeTo(500,1);
+    setInterval(blinkingArrow,1500);
 	}
 );
 
