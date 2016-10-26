@@ -2404,7 +2404,7 @@ var blinkingArrow = function(){
 $(document).ready(
 	function(){
 		$("#introName").delay(1000).fadeTo(500,1);
-    $("#textIntro").delay(3000).fadeIn(1000);
+    $("#textIntro").delay(3000).fadeTo(1000,1);
 		setInterval(iterationTitlesRight,2500);
     $("#introArrow").delay(4500).fadeTo(500,1);
     setInterval(blinkingArrow,1500);
