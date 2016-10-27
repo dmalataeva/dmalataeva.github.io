@@ -2403,6 +2403,7 @@ var blinkingArrow = function(){
 
 $(document).ready(
 	function(){
+    $("#project1").load("./textstuff/project1.txt");
 		$("#introName").delay(1000).fadeTo(500,1);
     $("#textIntro").delay(3000).fadeTo(1000,1);
 		setInterval(iterationTitlesRight,2500);

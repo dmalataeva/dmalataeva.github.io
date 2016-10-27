@@ -15,9 +15,18 @@
   <script src="https://use.fontawesome.com/f340fcd75c.js"></script>
 
 	<!--Trying out-->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans+Caption|Taviraj|Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans+Caption|Ubuntu+Mono|Taviraj|Cinzel|Inconsolata|Roboto+Slab" rel="stylesheet">
+<!-- Font Directions:
 
+Cinzel - bold, all-caps font for officialness
+Inconsolata - rounded, command-line-like and typerwiterish font
+Roboto-slab - Times New Roman in a friendlier format
+Montserrat - bold, rounded font, universal
+PT Sans Caption - veeery sober font
+Taviraj - Times New Roman with a hint of squiggliness
+Ubuntu -
 
+-->
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lekton' rel='stylesheet' type='text/css'>
   </head>
@@ -27,49 +36,69 @@
 
 	<!-- Introduction -->
 
-		<div class="col-sm-12 text-center" style="padding-top:10vh">
+		<div class="col-sm-10 col-sm-offset-1 text-center" style="padding-top:10vh">
 			<img class="img-responsive center-block" src="introduction.png" id="introName">
-      <span id="title">
+      <div id="title">
         Deniza
-			</span>
-        <p id="textIntro">Hi! I'm Deniza. I'm passionate about technology and innovation.<br>Currently, I'm studying Computer Engineering at the University of Waterloo. Some specific areas that interest me are machine learning and AI's, cybersecurity and gaming development.<br><br>In my spare time I work on my personal ideas, attend hackathons and go coffee-shop-scouting.<br>I also draw and travel a lot - it's my form of meditation, and it keeps my creativity flowing.<br><br>Below you can find more information about what I've done and what I've learned along the way.</p>
-    </div>
+			</div>
+        <p id="textIntro">Passionate about technology and innovation.<br>Currently studying Computer Engineering at the University of Waterloo.<br>Some specific topics of interest include cybersecurity, machine learning and AI.<br>Spare time? Personal ideas, hackathons, drawing and travel.<br><br>Below you can find more information about what I've done and what I've learned along the way.</p>
+        <!-- <br>I also draw and travel a lot - it's my form of meditation, and it keeps my creativity flowing.<br> -->
     <span class="glyphicon glyphicon-triangle-bottom text-center" aria-hidden="true" id="introArrow"></span>
-		<div class="col-sm-12" style="height:300px">
+    </div>
+    <div class="col-sm-12" style="height:300px">
 		</div>
 
 	<!-- doings -->
 
-	<span class="col-sm-8 col-sm-offset-2" id="doings">
+	<span class="col-sm-8 col-sm-offset-2 text-left" id="doings">
 	<h2 class="col-sm-12 text-center">Projects</h2>
-		<div class="doingsItem text-left">
+		<div class="doingsItem">
 			<p class="doingsTitle">Brainiac</p>
 			<p class="doingsDate">2014</p>
-			<p class="doingsDescription">Lorem ipsum dolor sit amet, faucibus et id lorem conubia, nulla eget convallis elit turpis interdum, cras vivamus tempus quis parturient quos vestibulum, feugiat nulla consectetuer a, inceptos ad luctus non volutpat in tincidunt. Est reprehenderit id congue nec et feugiat, parturient diam lacus sint pharetra est, dolor urna metus risus cursus. Id nonummy, libero orci at in reiciendis ligula, auctor ac. Tempor nullam ultricies pede ad gravida adipiscing, lobortis mauris porta elementum integer convallis. Sed ultricies nunc pellentesque cras at, nunc praesent elit imperdiet purus, cursus mi, dolor turpis adipiscing, sit montes massa erat donec. Proin congue morbi pellentesque urna, ligula erat, mus wisi. Nec sapien nunc nulla natoque nulla quis. Malesuada massa pellentesque non tellus a congue, vehicula malesuada. Libero porta arcu libero quis eu. Nulla dui, quam sed justo augue cursus condimentum, sed arcu nulla, suspendisse sed mauris quis.</p>
-		</div>
+			<p class="doingsDescription" id="project1">An arcade-style game designed to help international students learn aspects of English, Math, Chemistry,
+        and as a bonus - names of peculiar programming languages. It was 'virally' uploaded onto several computers in the school lab and thoroughly
+        tested with the help and advice of subject experts (teachers).<br>Brainiac was my first ever project, and it was completed in collaboration with
+        a friend in two weeks as a final project for a highschool course. Later on, it was rewritten and refactored using Python.</p>
+      <p class="doingsTools">Python, prev. SmallBasic</p>
+    </div>
 		<div class="col-sm-12" style="height:10vh">
 		</div>
-		<div class="col-sm-12 text-right">
-			<p class="doingsTitle">Project Harvambe</p>
+		<div class="col-sm-12">
+			<p class="doingsTitle">Wandaless</p>
 			<p class="doingsDate">2016</p>
-			<p class="doingsDescription">Lorem ipsum dolor sit amet, faucibus et id lorem conubia, nulla eget convallis elit turpis interdum, cras vivamus tempus quis parturient quos vestibulum, feugiat nulla consectetuer a, inceptos ad luctus non volutpat in tincidunt. Est reprehenderit id congue nec et feugiat, parturient diam lacus sint pharetra est, dolor urna metus risus cursus. Id nonummy, libero orci at in reiciendis ligula, auctor ac. Tempor nullam ultricies pede ad gravida adipiscing, lobortis mauris porta elementum integer convallis. Sed ultricies nunc pellentesque cras at, nunc praesent elit imperdiet purus, cursus mi, dolor turpis adipiscing, sit montes massa erat donec. Proin congue morbi pellentesque urna, ligula erat, mus wisi. Nec sapien nunc nulla natoque nulla quis. Malesuada massa pellentesque non tellus a congue, vehicula malesuada. Libero porta arcu libero quis eu. Nulla dui, quam sed justo augue cursus condimentum, sed arcu nulla, suspendisse sed mauris quis.</p>
-		</div>
+			<p class="doingsDescription" id="project2">A project completed and presented for HackHarvard 2016. The web application lets users collaborate on
+      travel plans. Users can connect and chat real-time, set a starting point to meet up, change destination nodes which they want to visit
+      during their trip and visualize the entire route on a map.<br>Additionally, Wanda, the responsive chat bot, analyzes chat messages to sense when
+      users are suggesting additional destination nodes or asking for a trip review and responds to the requests accordingly.<br>Wandaless was completed in a group
+      of four, with my specialization being real-time chat interfaces and AI.</p>
+      <p class="doingsTools">Javascript (incl. Ajax, jQuery), Java; Bootstrap, Google Cloud Services, Googlemaps API and Motion.ai</p>
+    </div>
 		<div class="col-sm-12" style="height:10vh">
 		</div>
 	<h2 class="col-sm-12 text-center">Internships</h2>
-		<div class="col-sm-12 text-left">
+		<div class="col-sm-12">
 			<p class="doingsTitle">Genetec</p>
 			<p class="doingsDate">January 2016 - April 2016</p>
 			<p class="doingsLocation">Montreal, Canada</p>
-			<p class="doingsDescription">Lorem ipsum dolor sit amet, faucibus et id lorem conubia, nulla eget convallis elit turpis interdum, cras vivamus tempus quis parturient quos vestibulum, feugiat nulla consectetuer a, inceptos ad luctus non volutpat in tincidunt. Est reprehenderit id congue nec et feugiat, parturient diam lacus sint pharetra est, dolor urna metus risus cursus. Id nonummy, libero orci at in reiciendis ligula, auctor ac. Tempor nullam ultricies pede ad gravida adipiscing, lobortis mauris porta elementum integer convallis. Sed ultricies nunc pellentesque cras at, nunc praesent elit imperdiet purus, cursus mi, dolor turpis adipiscing, sit montes massa erat donec. Proin congue morbi pellentesque urna, ligula erat, mus wisi. Nec sapien nunc nulla natoque nulla quis. Malesuada massa pellentesque non tellus a congue, vehicula malesuada. Libero porta arcu libero quis eu. Nulla dui, quam sed justo augue cursus condimentum, sed arcu nulla, suspendisse sed mauris quis.</p>
+      <p class="doingsTitle">IT Programmer Analyst</p>
+			<p class="doingsDescription" id="internship1">Worked on various projects and got to see insight into inter-department
+        communication and business customs. I also got to see some very neat security technology in action! Closely customized and scripted Dynamics CRM software, monitored deployment
+        sessions and fixed bugs. Contributed to scripting the migration and retrieval of business logic and metadata from
+        static values to dynamically changing key-value objects.</p>
 		</div>
 		<div class="col-sm-12" style="height:10vh">
 		</div>
-		<div class="col-sm-12 text-right">
+		<div class="col-sm-12">
 			<p class="doingsTitle">ScribbleLive</p>
 			<p class="doingsDate">September 2016 - December 2016</p>
 			<p class="doingsLocation">Toronto, Canada</p>
-			<p class="doingsDescription">Lorem ipsum dolor sit amet, faucibus et id lorem conubia, nulla eget convallis elit turpis interdum, cras vivamus tempus quis parturient quos vestibulum, feugiat nulla consectetuer a, inceptos ad luctus non volutpat in tincidunt. Est reprehenderit id congue nec et feugiat, parturient diam lacus sint pharetra est, dolor urna metus risus cursus. Id nonummy, libero orci at in reiciendis ligula, auctor ac. Tempor nullam ultricies pede ad gravida adipiscing, lobortis mauris porta elementum integer convallis. Sed ultricies nunc pellentesque cras at, nunc praesent elit imperdiet purus, cursus mi, dolor turpis adipiscing, sit montes massa erat donec. Proin congue morbi pellentesque urna, ligula erat, mus wisi. Nec sapien nunc nulla natoque nulla quis. Malesuada massa pellentesque non tellus a congue, vehicula malesuada. Libero porta arcu libero quis eu. Nulla dui, quam sed justo augue cursus condimentum, sed arcu nulla, suspendisse sed mauris quis.</p>
+      <p class="doingsTitle">Software Testing Developer</p>
+			<p class="doingsDescription" id="internship2">Being part of ScribbleLive's prominent livestreaming platform Engage, I
+        worked on the QA team to test weekly sprint deployments, continuously monitored the system for bugs and closely
+        communicated with the CSM department. As a long-term goal for this internship, I worked with a team of developers to
+        re-strategize Quality Assurance and automate most of the testing processes.<br>Additionally, I was able to gain
+        insight and mentorship about the infrastructure of the company's software products and how they
+        compete with industry standards and trends.</p>
 		</div>
 	</span>
 
@@ -81,18 +110,17 @@
     </div>
     <div class="col-sm-2 col-sm-offset-2 text-center" style="padding-top:100px" id="interests">
       <h2>Interests</h2>
-        <p>Machine Learning<br>Cybersecurity/Encryption<br>Android programming<br>Greyhounds<br>Graphic design</p>
+        <p>Machine Learning<br>Cybersecurity/Encryption<br>Android programming<br>Game engines<br>Graphic design</p>
     </div>
     <div class="col-sm-12 text-center" id="link">
       <p>Or check my <a href="dmalatae_resume2016.pdf" target="_blank" style="color:#ff6666">resume</a> for more details.</p>
-      <a href="dmalatae_resume2016.pdf" target="_blank"><span class="glyphicon glyphicon-list-alt" id="resumeGlyph"></span></a>
     </div>
   </span>
 
   <!-- Links -->
 
   <div class="col-sm-12 text-center">
-    <p>If you want to collaborate, send a professional inquiry or just have a nice chat about <br>the trendiest coffee shops in the city, feel free to contact me through these:</p>
+    <p>If you want to send a professional inquiry, collaborate or just have a nice chat,<br> feel free to contact me through these:</p>
     <a href="https://github.com/dmalataeva" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
     <a href="hhttps://www.linkedin.com/in/dmalataeva" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
   </div>
