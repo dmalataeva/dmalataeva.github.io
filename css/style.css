@@ -104,8 +104,8 @@ p{
 	color: #e2e2e2;
 }
 
-.email p{
-	line-height: 1;
+#email{
+	display: block;
 }
 
 #textIntro{
