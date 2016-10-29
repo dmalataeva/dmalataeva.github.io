@@ -4,17 +4,6 @@ body{
 
 	/** Text stuff */
 
-h1 {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 300;
-	font-style: italic;
-	text-decoration: line-through;
-	color: #e2e2e2;
-	font-size: 400px;
-	line-height: 40px;
-	padding-bottom: 50px;
-}
-
 h2 {
 	font-family: 'Athiti', sans-serif;
 	color: #e2e2e2;
@@ -60,14 +49,21 @@ a.lightbox {
 
 
 div.cropped {
-	display: inline;
-	width: 25%;
-	padding-top: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	min-height: 200px;
 	min-width: 200px;
+	border: 5px solid #999999;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+
+p.description{
+	opacity: 0;
+	color: #ffffff;
+	z-index: 600;
 }
 
 #thumbnail:hover div {
@@ -75,18 +71,13 @@ div.cropped {
 	-webkit-transition-property: filter;
 	-webkit-transition-duration: 0.3s;
 	-webkit-transition-timing-function: ease-out;
-
 }
 
-img.thumbnail{
-	padding: 0;
-	margin: 0;
-	float: left;
-	border-radius: 0;
-	width: 25%;
-	display: inline;
-	position: static;
-	z-index: 50;
+#thumbnail:hover p {
+	opacity: 1;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
 }
 
 #flashing{

@@ -2401,6 +2401,26 @@ var blinkingArrow = function(){
   $("#introArrow").fadeTo(500,0);
 };
 
+var goToTop = function(){
+  $('html,body').animate({scrollTop: 0},'slow');
+};
+
+var goToDoings = function(){
+  $('html,body').animate({scrollTop:
+  $("#doings").offset().top},'slow');
+};
+
+var goToResume = function(){
+  $('html,body').animate({scrollTop:
+  $("#resume").offset().top},'slow');
+};
+
+var goToGrid = function(){
+  $('html,body').animate({scrollTop:
+  $("#grid").offset().top},'slow');
+};
+
+
 $(document).ready(
 	function(){
     $("#project1").load("./textstuff/project1.txt");
