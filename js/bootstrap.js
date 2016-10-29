@@ -2387,9 +2387,9 @@ var t=0;
 
 
 var iterationTitlesRight = function(){
-	$("#title").delay(250).fadeTo(500,1);
-	$("#title").text(titles[t]);
-	$("#title").delay(1000).fadeTo(500,0);
+	$("#flashing").delay(250).fadeTo(500,1);
+	$("#flashing").text(titles[t]);
+	$("#flashing").delay(1000).fadeTo(500,0);
 	t++;
 	if (t===titles.length){
 		t=0;
@@ -2404,8 +2404,8 @@ var blinkingArrow = function(){
 $(document).ready(
 	function(){
     $("#project1").load("./textstuff/project1.txt");
-		$("#introName").delay(1000).fadeTo(500,1);
-    $("#textIntro").delay(3000).fadeTo(1000,1);
+		$("#introName").delay(500).fadeTo(500,1);
+    $("#textIntro").delay(1000).fadeTo(1000,1);
 		setInterval(iterationTitlesRight,2500);
     $("#introArrow").delay(4500).fadeTo(500,1);
     setInterval(blinkingArrow,1500);

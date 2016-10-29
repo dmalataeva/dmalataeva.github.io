@@ -16,9 +16,9 @@ h1 {
 }
 
 h2 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Athiti', sans-serif;
 	color: #e2e2e2;
-	font-size: 40px;
+	font-size: 52px;
 }
 
 
@@ -89,12 +89,15 @@ img.thumbnail{
 	z-index: 50;
 }
 
-#title{
+#flashing{
+	opacity: 0;
+	padding-top: 20px;
+}
+
+.title{
 	font-family: 'Athiti', sans-serif;
 	color: #e2e2e2;
 	font-size: 36px;
-	opacity: 0;
-	padding-top: 20px;
 }
 
 p{
