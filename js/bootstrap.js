@@ -2405,10 +2405,9 @@ var copyEmail = document.querySelector('.email');
 copyEmail.addEventListener('click', function(event) {
   // Select the email link anchor text
   var emailLink = document.querySelector('.email');
-  var range = document.createRange();  
+  var range = document.createRange();
   range.selectNode(emailLink);
   window.getSelection().addRange(range);
-
   try {
     // Now that we've selected the anchor text, execute the copy command
     var successful = document.execCommand('copy');
@@ -2422,6 +2421,8 @@ copyEmail.addEventListener('click', function(event) {
   // removeRange(range) when it is supported
   window.getSelection().removeAllRanges();
 });
+
+
 
 var goToTop = function(){
   $('html,body').animate({scrollTop: 0},'slow');
