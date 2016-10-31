@@ -152,8 +152,16 @@ a,li{
 	/**text-shadow: 2px 2px 4px #000000;*/
 }
 
+a:hover{
+	color: #5cd6d6;
+}
+
+a:-webkit-any-link{
+	text-decoration: none;
+}
+
 li:hover{
-	color: #4b4b33;
+	color: #5cd6d6;
 	-webkit-transition-property: color;
 	-webkit-transition-duration: 0.3s;
 }
@@ -163,6 +171,7 @@ div.panel{
 	color: #e2e2e2;
 	display: inline-block;
 	padding: 5px 10px 5px 10px;
+	background-color: rgba(0,0,0,0.1);
 }
 
 .fa{

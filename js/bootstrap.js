@@ -2400,11 +2400,11 @@ var blinkingArrow = function(){
   $("#introArrow").fadeTo(500,1);
   $("#introArrow").fadeTo(500,0);
 };
-
-var copyEmail = document.querySelector('.email');
-copyEmail.addEventListener('click', function(event) {
+//========================FIRST==COPYLINK==LISTENER===============================
+var copyEmail1 = document.querySelector('.email1');
+copyEmail1.addEventListener('click', function(event) {
   // Select the email link anchor text
-  var emailLink = document.querySelector('.email');
+  var emailLink = document.querySelector('.email1');
   var range = document.createRange();
   range.selectNode(emailLink);
   window.getSelection().addRange(range);
@@ -2422,7 +2422,29 @@ copyEmail.addEventListener('click', function(event) {
   window.getSelection().removeAllRanges();
 });
 
+//======================SECOND==COPYLINK==LISTENER===============================
+var copyEmail2 = document.querySelector('.email2');
+copyEmail2.addEventListener('click', function(event) {
+  // Select the email link anchor text
+  var emailLink = document.querySelector('.email2');
+  var range = document.createRange();
+  range.selectNode(emailLink);
+  window.getSelection().addRange(range);
+  try {
+    // Now that we've selected the anchor text, execute the copy command
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log('Email was ' + msg + 'ly copied to clipboard.');
+  } catch(err) {
+    console.log('Sorry, you will have to manually Ctrl+C that stuff.');
+  }
 
+  // Remove the selections - NOTE: Should use
+  // removeRange(range) when it is supported
+  window.getSelection().removeAllRanges();
+});
+
+//==============================================================================
 
 var goToTop = function(){
   $('html,body').animate({scrollTop: 0},'slow');
@@ -2446,7 +2468,6 @@ var goToGrid = function(){
 
 $(document).ready(
 	function(){
-    $("#project1").load("./textstuff/project1.txt");
 		$("#introName").delay(500).fadeTo(500,1);
     $("#textIntro").delay(1000).fadeTo(1000,1);
 		setInterval(iterationTitlesRight,2500);
