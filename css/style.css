@@ -152,7 +152,7 @@ a,li{
 	/**text-shadow: 2px 2px 4px #000000;*/
 }
 
-a:hover{
+div.panel:hover{
 	color: #5cd6d6;
 }
 
