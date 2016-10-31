@@ -2401,6 +2401,28 @@ var blinkingArrow = function(){
   $("#introArrow").fadeTo(500,0);
 };
 
+var copyEmail = document.querySelector('.email');
+copyEmail.addEventListener('click', function(event) {
+  // Select the email link anchor text
+  var emailLink = document.querySelector('.email');
+  var range = document.createRange();  
+  range.selectNode(emailLink);
+  window.getSelection().addRange(range);
+
+  try {
+    // Now that we've selected the anchor text, execute the copy command
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log('Email was ' + msg + 'ly copied to clipboard.');
+  } catch(err) {
+    console.log('Sorry, you will have to manually Ctrl+C that stuff.');
+  }
+
+  // Remove the selections - NOTE: Should use
+  // removeRange(range) when it is supported
+  window.getSelection().removeAllRanges();
+});
+
 var goToTop = function(){
   $('html,body').animate({scrollTop: 0},'slow');
 };
