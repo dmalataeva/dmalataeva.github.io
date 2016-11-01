@@ -1,5 +1,6 @@
 body{
 	background-color: #999999;
+	overflow: hidden;
 }
 
 	/** Text stuff */
@@ -145,7 +146,7 @@ opacity: 0;
 	transition: all .3s;
 }
 
-a,li{
+li{
 	text-decoration: none;
 	font-size: 20px;
 	color: #e2e2e2;
@@ -156,8 +157,9 @@ div.panel:hover{
 	color: #5cd6d6;
 }
 
-a:-webkit-any-link{
+a:hover{
 	text-decoration: none;
+	color: #5cd6d6;
 }
 
 li:hover{
@@ -191,4 +193,59 @@ div.panel{
 .gridCloseup img {
 	max-height: 80vh;
 	max-width: 50vw;
+}
+
+.doingsDate{
+	font-size: 16px;
+}
+
+/**=====================LOADING=ANIMATION=========================*/
+.loadingScreen{
+	display: block;
+	position: fixed;
+	height: 100vh;
+	z-index: 900;
+	background-color: rgba(0,0,0,0.8);
+	padding: 50vh 50vw 50vh 50vw;
+}
+
+.loading {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #0FF;
+  animation: 1s spin infinite;
+}
+.loading::before, .loading::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: .5s infinite alternate linear;
+}
+.loading::before {
+  background: #F0F;
+  animation-name: blur1;
+}
+.loading::after {
+  background: #FFF;
+  animation-name: blur2;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes blur1 {
+  to {
+    transform: rotate(-30deg);
+  }
+}
+@keyframes blur2 {
+  to {
+    transform: rotate(-15deg);
+  }
 }

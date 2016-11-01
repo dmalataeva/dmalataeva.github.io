@@ -2465,16 +2465,23 @@ var goToGrid = function(){
   $("#grid").offset().top},'slow');
 };
 
+var loadComplete = function(){
+  $('body').css("overflow","visible");
+  $(".loadingScreen").fadeOut(500);
+  $('html,body').animate({scrollTop: 0},1000);
+  $("#introName").delay(500).fadeTo(500,1);
+  $("#textIntro").delay(1000).fadeTo(1000,1);
+  setInterval(iterationTitlesRight,2500);
+  $("#introArrow").delay(4500).fadeTo(500,1);
+  setInterval(blinkingArrow,1500);
+};
 
-$(document).ready(
-	function(){
-		$("#introName").delay(500).fadeTo(500,1);
-    $("#textIntro").delay(1000).fadeTo(1000,1);
-		setInterval(iterationTitlesRight,2500);
-    $("#introArrow").delay(4500).fadeTo(500,1);
-    setInterval(blinkingArrow,1500);
-	}
-);
+
+$(document).ready(function(){
+  setTimeout(loadComplete,1000);
+});
+
+
 
 $("#introArrow").click(function() {
 $('html,body').animate({scrollTop:
