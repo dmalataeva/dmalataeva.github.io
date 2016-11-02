@@ -1,13 +1,13 @@
 body{
-	background-color: #999999;
+	background-color: #fff;
 	overflow: hidden;
+	color: #545454;
 }
 
 	/** Text stuff */
 
 h2 {
 	font-family: 'Athiti', sans-serif;
-	color: #e2e2e2;
 	font-size: 52px;
 }
 
@@ -47,7 +47,7 @@ div.gridSquare{
 	justify-content: center;
 	min-height: 200px;
 	min-width: 200px;
-	border: 5px solid #999999;
+	border: 5px solid #fff;
 }
 
 div.gridImage {
@@ -89,7 +89,6 @@ p.description{
 
 .title{
 	font-family: 'Athiti', sans-serif;
-	color: #e2e2e2;
 	font-size: 36px;
 }
 
@@ -97,7 +96,6 @@ p{
 	font-family: 'Athiti', sans-serif;
 	font-size: 20px;
 	line-height: 1.5;
-	color: #e2e2e2;
 }
 
 #email{
@@ -110,10 +108,10 @@ opacity: 0;
 }
 
 #introArrow{
-	color:#e2e2e2;
 	font-size: 20px;
 	opacity: 0;
 	display: block;
+	color: #35cfff;
 }
 
 #introName{
@@ -128,7 +126,6 @@ opacity: 0;
 }
 
 #resumeGlyph{
-	color: #e2e2e2;
 	font-size: 40px;
 	display: block;
 }
@@ -149,28 +146,30 @@ opacity: 0;
 li{
 	text-decoration: none;
 	font-size: 20px;
-	color: #e2e2e2;
 	/**text-shadow: 2px 2px 4px #000000;*/
 }
 
 div.panel:hover{
-	color: #5cd6d6;
+	color: #35cfff;
 }
 
+a{
+	color: #545454;
+}
 a:hover{
 	text-decoration: none;
-	color: #5cd6d6;
+	color: #35cfff;
 }
 
 li:hover{
-	color: #5cd6d6;
+	color: #35cfff;
 	-webkit-transition-property: color;
 	-webkit-transition-duration: 0.3s;
 }
 
 div.panel{
 	font-size: 14px;
-	color: #e2e2e2;
+	color: #545454;
 	display: inline-block;
 	padding: 5px 10px 5px 10px;
 	background-color: rgba(0,0,0,0.1);
