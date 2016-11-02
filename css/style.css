@@ -90,6 +90,7 @@ p.description{
 .title{
 	font-family: 'Athiti', sans-serif;
 	font-size: 36px;
+	color: #00c3ff;
 }
 
 p{
@@ -111,7 +112,7 @@ opacity: 0;
 	font-size: 20px;
 	opacity: 0;
 	display: block;
-	color: #35cfff;
+	color: #00c3ff;
 }
 
 #introName{
@@ -150,19 +151,20 @@ li{
 }
 
 div.panel:hover{
-	color: #35cfff;
+	color: #00c3ff;
 }
 
 a{
 	color: #545454;
+	text-decoration: none;
 }
 a:hover{
 	text-decoration: none;
-	color: #35cfff;
+	color: #00c3ff;
 }
 
 li:hover{
-	color: #35cfff;
+	color: #00c3ff;
 	-webkit-transition-property: color;
 	-webkit-transition-duration: 0.3s;
 }
@@ -187,6 +189,7 @@ div.panel{
 
 .gridCloseup p{
 	padding-left: 20px;
+	color: #ffffff;
 }
 
 .gridCloseup img {
