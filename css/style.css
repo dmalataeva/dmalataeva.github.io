@@ -90,7 +90,7 @@ p.description{
 .title{
 	font-family: 'Athiti', sans-serif;
 	font-size: 36px;
-	color: #00c3ff;
+	color: #ff7e00;
 }
 
 p{
@@ -112,7 +112,7 @@ opacity: 0;
 	font-size: 20px;
 	opacity: 0;
 	display: block;
-	color: #00c3ff;
+	color: #ff7e00;
 }
 
 #introName{
@@ -151,7 +151,7 @@ li{
 }
 
 div.panel:hover{
-	color: #00c3ff;
+	color: #ff7e00;
 }
 
 a{
@@ -160,11 +160,11 @@ a{
 }
 a:hover{
 	text-decoration: none;
-	color: #00c3ff;
+	color: #ff7e00;
 }
 
 li:hover{
-	color: #00c3ff;
+	color: #ff7e00;
 	-webkit-transition-property: color;
 	-webkit-transition-duration: 0.3s;
 }
@@ -174,7 +174,7 @@ div.panel{
 	color: #545454;
 	display: inline-block;
 	padding: 5px 10px 5px 10px;
-	background-color: rgba(0,0,0,0.1);
+	background-color: rgba(0,0,0,0.05);
 }
 
 .fa{
@@ -215,7 +215,7 @@ div.panel{
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #0FF;
+  background: #cc0099;
   animation: 1s spin infinite;
 }
 .loading::before, .loading::after {
@@ -228,7 +228,7 @@ div.panel{
   animation: .5s infinite alternate linear;
 }
 .loading::before {
-  background: #F0F;
+  background: #ff6600;
   animation-name: blur1;
 }
 .loading::after {
