@@ -15,7 +15,7 @@
   <script src="https://use.fontawesome.com/f340fcd75c.js"></script>
 
 	<!--Trying out-->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Athiti" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Athiti|Roboto-slab" rel="stylesheet">
 <!-- Font Directions:
 
 Cinzel - bold, all-caps font for officialness
@@ -29,6 +29,9 @@ Ubuntu Mono (monospace) - Montserrat, rounded and un-bolded
 -->
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lekton' rel='stylesheet' type='text/css'>
+
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+
   </head>
 
   <!--====================================BODY===STARTS=========================================-->
@@ -41,7 +44,8 @@ Ubuntu Mono (monospace) - Montserrat, rounded and un-bolded
 	<!-- Introduction -->
 
 		<div class="col-sm-10 col-sm-offset-1 text-center" style="padding-top:10vh">
-			<img class="img-responsive center-block" src="introduction.png" id="introName">
+			<!--<img class="img-responsive center-block" src="introduction.png" id="introName"> I WILL REPLACE THIS SOMEDAY. S O M E D A Y -->
+      <h1 id="introName">Deniza Malataeva</h1>
       <div class="title" id="flashing">
         Deniza
 			</div>
@@ -54,9 +58,9 @@ Ubuntu Mono (monospace) - Montserrat, rounded and un-bolded
 
 	<!-- doings -->
 
-	<span class="col-sm-8 col-sm-offset-2 text-left" id="doings">
+	<span class="col-sm-12" id="doings">
 	<h2 class="col-sm-12 text-center">Projects</h2>
-		<div id="project1">
+		<div id="project1" class="col-sm-8 col-sm-offset-2 text-left">
 			<p class="title">Brainiac</p>
 			<p class="doingsDate">2014</p>
 			<p class="doingsDescription">An arcade-style game designed to help international students learn aspects of English, Math, Chemistry,
@@ -65,9 +69,7 @@ Ubuntu Mono (monospace) - Montserrat, rounded and un-bolded
         a friend in two weeks as a final project for a highschool course. Later on, it was rewritten and refactored using Python.</p>
       <p class="doingsTools"><i>Python, prev. SmallBasic</i></p>
     </div>
-		<div class="col-sm-12" style="height:10vh">
-		</div>
-		<div id="project2">
+		<div id="project2" class="col-sm-8 col-sm-offset-2 text-left">
 			<p class="title">Wandaless</p>
 			<p class="doingsDate">2016</p>
 			<p class="doingsDescription">A project completed and presented for HackHarvard 2016. The web application lets users collaborate on
@@ -77,10 +79,8 @@ Ubuntu Mono (monospace) - Montserrat, rounded and un-bolded
       of four, with my specialization being real-time chat interfaces and AI.</p>
       <p class="doingsTools"><i>Javascript (incl. Ajax, jQuery), Java; Bootstrap, Google Cloud Services, Googlemaps API and Motion.ai</i></p>
     </div>
-		<div class="col-sm-12" style="height:10vh">
-		</div>
-	<h2 class="col-sm-12 text-center">Internships</h2>
-		<div id="internship1">
+	<h2 class="col-sm-12 text-center" style="padding: 10vh 0 0 0">Internships</h2>
+		<div id="internship1"  class="col-sm-8 col-sm-offset-2 text-left">
 			<p class="title"><a href="https://www.genetec.com/" style="color:#ff7e00">Genetec</a> - Programmer Analyst</p>
 			<p class="doingsDate">January 2016 - April 2016</p>
 			<p class="doingsLocation">Montreal, Canada</p>
@@ -89,9 +89,7 @@ Ubuntu Mono (monospace) - Montserrat, rounded and un-bolded
         sessions and fixed bugs. Contributed to scripting the migration and retrieval of business logic and metadata from
         static values to dynamically changing key-value objects.</p>
 		</div>
-		<div class="col-sm-12" style="height:10vh">
-		</div>
-		<div id="internship2">
+		<div id="internship2" class="col-sm-8 col-sm-offset-2 text-left">
 			<p class="title"><a href="http://www.scribblelive.com/" style="color:#ff7e00">ScribbleLive</a> - Software Testing Developer</p>
 			<p class="doingsDate">September 2016 - December 2016</p>
 			<p class="doingsLocation">Toronto, Canada</p>
@@ -256,7 +254,7 @@ Ubuntu Mono (monospace) - Montserrat, rounded and un-bolded
     <li onclick="goToTop()"></li>
     <li onclick="goToDoings()"></li>
     <li onclick="goToResume()"></li>
-    <li onclick="goToGrid()"></li>
+    <!--<li onclick="goToGrid()"></li>-->
   </div>
 
 

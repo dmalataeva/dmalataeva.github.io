@@ -2476,12 +2476,9 @@ var loadComplete = function(){
   setInterval(blinkingArrow,1500);
 };
 
-
 $(document).ready(function(){
   setTimeout(loadComplete,1000);
 });
-
-
 
 $("#introArrow").click(function() {
 $('html,body').animate({scrollTop:

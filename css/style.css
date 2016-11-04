@@ -6,6 +6,12 @@ body{
 
 	/** Text stuff */
 
+h1{
+	font-family: "Montserrat", sans-serif;
+	font-size: 80px;
+	color: #ff7e00;
+}
+
 h2 {
 	font-family: 'Athiti', sans-serif;
 	font-size: 52px;
@@ -116,9 +122,9 @@ opacity: 0;
 }
 
 #introName{
-	min-width:500px;
+	/*min-width:500px;*/
 	display:block;
-	width: 60%;
+	/*width: 60%;*/
 	opacity: 0;
 }
 
