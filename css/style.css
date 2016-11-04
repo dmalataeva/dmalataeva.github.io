@@ -133,6 +133,7 @@ opacity: 0;
 
 #grid{
 	padding-top: 100px;
+	display: none;
 }
 
 .fixed-side-navbar{
