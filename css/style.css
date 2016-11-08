@@ -237,10 +237,14 @@ div.panel{
 }
 .loading::before {
   background: #ff6600;
+	width: 25px;
+	height: 25px;
   animation-name: blur1;
 }
 .loading::after {
   background: #FFF;
+	width: 25px;
+	height: 25px;
   animation-name: blur2;
 }
 
