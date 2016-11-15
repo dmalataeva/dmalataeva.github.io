@@ -2476,6 +2476,19 @@ var loadComplete = function(){
   setInterval(blinkingArrow,1500);
 };
 
+var checkView = function(){
+  var windowHeight = web_window.height();
+  var windowTop = web_window.scrollTop();
+  var windowBottom = (windowTop + windowHeight);
+
+  $.each(animation_elements, function(){
+    var element = $(this);
+    var elementHeight = $(element).outerHeight();
+    var elementTop = $(element).offset().top;
+    var elementBottom = (elementTop + elementHeight);
+  })
+}
+
 $(document).ready(function(){
   setTimeout(loadComplete,1000);
 });
@@ -2484,3 +2497,5 @@ $("#introArrow").click(function() {
 $('html,body').animate({scrollTop:
 	$("#doings").offset().top},'slow');
 });
+
+$(window).on('scroll resize',checkView);

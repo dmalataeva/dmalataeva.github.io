@@ -126,6 +126,7 @@ opacity: 0;
 	/*min-width:500px;*/
 	display:block;
 	/*width: 60%;*/
+	/*text-shadow: 2px 2px 16px #000;*/
 	opacity: 0;
 }
 
@@ -185,10 +186,6 @@ div.panel{
 	background-color: rgba(0,0,0,0.05);
 }
 
-.fa{
-	padding: 10px 10px 20px 10px;
-}
-
 .gridCloseup{
 	display: flex;
 	align-items: center;
@@ -208,6 +205,31 @@ div.panel{
 .doingsDate{
 	font-size: 16px;
 }
+/**
+.textChunk1{
+	left: -200px;
+}
+
+.textChunk2{
+	left: 200px;
+}
+
+.textChunk3{
+	bottom: -100px;
+}
+
+.textChunk4{
+	padding-left: -200px;
+}
+
+.textChunk5{
+	padding-left: 200px;
+}
+*/
+.fa{
+	top: 10px;
+	bottom: 20px;
+}
 
 /**=====================LOADING=ANIMATION=========================*/
 .loadingScreen{
@@ -221,8 +243,8 @@ div.panel{
 
 .loading {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   background: #cc0099;
   animation: 1s spin infinite;
 }
