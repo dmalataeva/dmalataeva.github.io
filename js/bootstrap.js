@@ -2457,7 +2457,7 @@ var goToDoings = function(){
 
 var goToResume = function(){
   $('html,body').animate({scrollTop:
-  $("#resume").offset().top},'slow');
+  $("#skills").offset().top+100},'slow');
 };
 
 var goToGrid = function(){
