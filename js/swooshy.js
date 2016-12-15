@@ -85,7 +85,7 @@ var goToGrid = function(){
 
 var loadComplete = function(){
   $('body').css("overflow","visible");
-  $(".loadingScreen").fadeOut(500);
+  $(".loadingScreen").fadeOut(1000);
   $('html,body').animate({scrollTop: 0},1000);
   $("#introName").delay(500).fadeTo(500,1);
   $("#textIntro").delay(1000).fadeTo(1000,1);

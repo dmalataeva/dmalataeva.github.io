@@ -237,51 +237,51 @@ div.panel{
 	position: fixed;
 	height: 100vh;
 	z-index: 900;
-	background-color: rgba(0,0,0,0.8);
-	padding: 50vh 50vw 50vh 50vw;
+	opacity: 0.5;
+	background-color: #FFF;
+}
+
+.loadingTop {
+	display: block;
+	position: fixed;
+	height: 50vh;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	z-index: 900;
+	animation: 2s hueSwitch;
+}
+
+.loadingBottom {
+	display: block;
+	position: fixed;
+	height: 50vh;
+	left: 0;
+	bottom: 0;
+	width: 100vw;
+	z-index: 900;
+	animation: 2s hueSwitch;
 }
 
 .loading {
   position: absolute;
-  width: 25px;
-  height: 25px;
-  background: #cc0099;
-  animation: 1s spin infinite;
-}
-.loading::before, .loading::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  animation: .5s infinite alternate linear;
-}
-.loading::before {
-  background: #ff6600;
-	width: 25px;
-	height: 25px;
-  animation-name: blur1;
-}
-.loading::after {
-  background: #FFF;
-	width: 25px;
-	height: 25px;
-  animation-name: blur2;
+  height: 2vh;
+	width: 1px;
+	top: 50vh;
+	left: 0;
+	z-index: 901;
+  background: rgba(255,255,255,0.5);
+  animation: 2s bar;
 }
 
-@keyframes spin {
+@keyframes bar {
   to {
-    transform: rotate(360deg);
+		width: 100vw;
   }
 }
-@keyframes blur1 {
-  to {
-    transform: rotate(-30deg);
-  }
-}
-@keyframes blur2 {
-  to {
-    transform: rotate(-15deg);
-  }
+
+@keyframes hueSwitch {
+	0%:  {background-color: #999999;}
+	20%  {background-color: #cc66ff;}
+	80% {background-color: #ff6600;}
 }
