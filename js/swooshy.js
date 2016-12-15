@@ -113,7 +113,7 @@ $(document).ready(function(){
 
 $("#introArrow").click(function() {
 $('html,body').animate({scrollTop:
-	$("#doings").offset().top},'slow');
+	$("#doings").offset().top},1000);
 });
 
 $(window).on('scroll resize',checkView);
