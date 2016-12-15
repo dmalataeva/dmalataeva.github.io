@@ -237,7 +237,6 @@ div.panel{
 	position: fixed;
 	height: 100vh;
 	z-index: 900;
-	opacity: 0.5;
 	background-color: #FFF;
 }
 
@@ -247,6 +246,7 @@ div.panel{
 	height: 50vh;
 	left: 0;
 	top: 0;
+	opacity: 0.8;
 	width: 100vw;
 	z-index: 900;
 	animation: 2s hueSwitch;
@@ -258,6 +258,7 @@ div.panel{
 	height: 50vh;
 	left: 0;
 	bottom: 0;
+	opacity: 0.8;
 	width: 100vw;
 	z-index: 900;
 	animation: 2s hueSwitch;
@@ -270,7 +271,7 @@ div.panel{
 	top: 50vh;
 	left: 0;
 	z-index: 901;
-  background: rgba(255,255,255,0.5);
+  background: #FFF;
   animation: 2s bar;
 }
 
