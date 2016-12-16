@@ -15,6 +15,7 @@ h1{
 
 h2 {
 	font-family: 'Athiti', sans-serif;
+	top: 200px;
 	font-size: 52px;
 }
 
@@ -282,7 +283,7 @@ div.panel{
 }
 
 @keyframes hueSwitch {
-	0%:  {background-color: #999999;}
-	20%  {background-color: #cc66ff;}
+	0%:  {background-color: #6600cc;}
+	20%  {background-color: #cc0099;}
 	80% {background-color: #ff6600;}
 }
