@@ -85,8 +85,8 @@ var goToGrid = function(){
 
 var loadComplete = function(){
   $('body').css("overflow","visible");
-  $(".loadingScreen").fadeOut(1000);
-  $('html,body').animate({scrollTop: 0},1000);
+  $(".loadingScreen").fadeOut(2000);
+  $('html,body').animate({scrollTop: 0},500);
   $("#introName").delay(500).fadeTo(500,1);
   $("#textIntro").delay(1000).fadeTo(1000,1);
   setInterval(iterationTitlesRight,2500);

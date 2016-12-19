@@ -14,14 +14,22 @@ h1{
 }
 
 h2 {
-	display: block;
+	display: inline;
 	font-family: 'Athiti', sans-serif;
-	margin-top: 200px;
+	margin-top: 100px;
 	font-size: 52px;
 }
 
-
+div.doing {
+	margin-top: 20px;
+}
 	/** Lightbox stuff */
+
+#playlist {
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
 
 a.lightbox {
 	text-decoration: none;
@@ -133,7 +141,7 @@ opacity: 0;
 }
 
 #link{
-	padding-top:100px;
+	padding-top:20px;
 }
 
 #resumeGlyph{
@@ -148,17 +156,18 @@ opacity: 0;
 
 .fixed-side-navbar{
 	position: fixed;
-	top: 45vh;
-	right: 0;
+	bottom: 10vh;
+	left: 1vw;
 	z-index: 500;
-	text-align: right;
+	line-height: 15px;
+	text-align: left;
+	color: #999999;
 	transition: all .3s;
 }
 
 li{
 	text-decoration: none;
 	font-size: 20px;
-	/**text-shadow: 2px 2px 4px #000000;*/
 }
 
 div.panel:hover{
