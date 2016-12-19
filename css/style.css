@@ -33,7 +33,7 @@ div.doing {
 
 .fa-spotify {
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 a.lightbox {
@@ -166,7 +166,7 @@ opacity: 0;
 	z-index: 500;
 	line-height: 15px;
 	text-align: left;
-	color: #999999;
+	color: #545454;
 	transition: all .3s;
 }
 
