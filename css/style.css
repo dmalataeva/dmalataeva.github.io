@@ -282,6 +282,16 @@ hr {
 	height: 100vh;
 }
 
+#navbar {
+	margin-top: 20px;
+	line-height: 2;
+}
+
+#navbar li{
+	font-size: 16px;
+	font-weight: bold;
+}
+
 /**=====================LOADING=ANIMATION=========================*/
 .loadingScreen{
 	display: block;

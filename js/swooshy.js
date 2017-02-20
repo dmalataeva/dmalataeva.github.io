@@ -54,14 +54,19 @@ var goToTop = function(){
   $('html,body').animate({scrollTop: 0},'slow');
 };
 
-var goToDoings = function(){
+var goToInternships = function(){
   $('html,body').animate({scrollTop:
-  $("#doings").offset().top},'slow');
+  $("#internships").offset().top},'slow');
 };
 
-var goToResume = function(){
+var goToSkills = function(){
   $('html,body').animate({scrollTop:
-  $("#skills").offset().top+100},'slow');
+  $("#skills").offset().top},'slow');
+};
+
+var goToProjects = function(){
+  $('html,body').animate({scrollTop:
+  $("#projects").offset().top},'slow');
 };
 
 var goToGrid = function(){
