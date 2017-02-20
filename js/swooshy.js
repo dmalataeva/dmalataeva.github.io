@@ -61,7 +61,7 @@ var goToInternships = function(){
 
 var goToSkills = function(){
   $('html,body').animate({scrollTop:
-  $("#skills").offset().top},'slow');
+  $("#interests").offset().top},'slow');
 };
 
 var goToProjects = function(){
