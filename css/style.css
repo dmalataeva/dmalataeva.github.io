@@ -179,7 +179,6 @@ div.panel{
 #playlist {
 	width: 50vw;
 	display: block;
-	margin-top: 20px;
 	text-align: center;
 	padding: 20px 10px 0px 40px;
 }
@@ -196,14 +195,14 @@ div.panel{
 	left: 0;
 	top: 0;
 	width: 25vw;
-	height: 200vh;
+	height: 100vh;
 	background-color: #FFF;
 	box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.4);
 	padding: 10px 20px 10px 20px;
 	color: #365463;
 	text-align: right;
 	z-index: 500;
-	overflow: auto;
+	overflow: hidden;
 }
 
 #center-body {
