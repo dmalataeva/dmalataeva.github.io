@@ -3,6 +3,7 @@ body{
 	/*background: -webkit-linear-gradient(left, #365463, #006699);*/
 	overflow: hidden;
 	color: #FFF;
+	bottom: 0;
 	font-family: 'Inconsolata', monospace;
 	font-weight: lighter;
 }
@@ -176,16 +177,8 @@ div.panel{
 	bottom: 20px;
 }
 
-#playlist {
-	width: 50vw;
-	display: block;
-	text-align: center;
-	padding: 20px 10px 0px 40px;
-}
-
 .fa-spotify {
-	margin-top: 20px;
-	margin-bottom: 40px;
+	margin: 40px 30px 5px 0px;
 }
 
 /*===========================NEWSHIT================================*/
@@ -209,11 +202,13 @@ div.panel{
 	float: left;
 	width: 75vw;
 	margin-left: 25vw;
+	bottom: 0px;
 }
 
 #textIntro {
 	text-align: center;
 	width: 50vw;
+	font-size: 18px;
 	margin-top: 30vh;
 }
 
@@ -227,6 +222,10 @@ p.title {
 	font-size: 18px;
 }
 
+#interests p {
+	 margin-top: 40px;
+}
+
 #projects {
 	margin-top: 400px;
 }
@@ -238,6 +237,7 @@ p.title {
 #interests {
 	padding: 20px 10px 0px 40px;
 	width: 50vw;
+	text-align: center;
 }
 
 .doing {
