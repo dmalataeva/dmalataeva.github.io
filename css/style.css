@@ -101,7 +101,7 @@ p.description{
 	margin-top: 10vh;
 	display: block;
 	width: 50vw;
-	color: #ff7e00;
+	color: #00b1cf;
 	text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -129,7 +129,7 @@ p.description{
 }
 
 a:hover{
-	color: #ff7e00;
+	color: #00b1cf;
 	text-decoration: none;
 	-webkit-transition-property: color;
 	-webkit-transition-duration: 0.3s;
@@ -146,7 +146,7 @@ a{
 
 
 li:hover{
-	color: #ff7e00;
+	color: #00b1cf;
 	-webkit-transition-property: color;
 	-webkit-transition-duration: 0.3s;
 }
@@ -229,8 +229,9 @@ p.title {
 	font-size: 18px;
 }
 
-#interests p {
-	 margin-top: 40px;
+#interests li {
+	text-align: left;
+	 font-size: 18px;
 }
 
 #projects {
@@ -242,8 +243,9 @@ p.title {
 }
 
 #interests {
-	padding: 20px 10px 0px 40px;
-	width: 50vw;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	display: block;
 	text-align: center;
 }
 
@@ -299,60 +301,4 @@ hr {
 #icons {
 	margin-top: 0vh;
 	text-align: center;
-}
-
-/**=====================LOADING=ANIMATION=========================*/
-.loadingScreen{
-	display: block;
-	position: fixed;
-	height: 100vh;
-	z-index: 900;
-	background-color: #FFF;
-}
-
-.loadingTop {
-	display: block;
-	position: fixed;
-	height: 50vh;
-	left: 0;
-	top: 0;
-	opacity: 0.8;
-	width: 100vw;
-	z-index: 900;
-	animation: 2s hueSwitch;
-}
-
-.loadingBottom {
-	display: block;
-	position: fixed;
-	height: 50vh;
-	left: 0;
-	bottom: 0;
-	opacity: 0.8;
-	width: 100vw;
-	z-index: 900;
-	animation: 2s hueSwitch;
-}
-
-.loading {
-  position: absolute;
-  height: 2vh;
-	width: 1px;
-	top: 50vh;
-	left: 0;
-	z-index: 901;
-  background: #FFF;
-  animation: 2s bar;
-}
-
-@keyframes bar {
-  to {
-		width: 100vw;
-  }
-}
-
-@keyframes hueSwitch {
-	0%:  {background-color: #6600cc;}
-	20%  {background-color: #cc0099;}
-	80% {background-color: #ff6600;}
 }
