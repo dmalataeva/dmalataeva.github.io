@@ -1,4 +1,15 @@
-var titles = ["UI/UX Developer","Tea Enthusiast","Android Programmer","Coffee-powered Creativity Machine","Javascript Developer","Hackathon Athlete","QA Specialist","Paper-cup Doodler","Concept Artist","Proud CE"];
+var titles = [
+  "UI/UX Developer",
+  "Tea Enthusiast",
+  "Android Programmer",
+  "Coffee-powered Creativity Machine",
+  "Javascript Developer",
+  "Hackathon Athlete",
+  "QA Specialist",
+  "Paper-cup Doodler",
+  "Concept Artist",
+  "Proud CE"
+]; // This list is unused because it is too long and cheesy
 
 var blinkingArrow = function(){
   $("#introArrow").delay(400).fadeTo(200,1);
