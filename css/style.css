@@ -63,6 +63,10 @@ p.title {
 	font-size: 18px;
 }
 
+p.me-titles {
+	font-size: 12px;
+}
+
 p.description{
 	opacity: 0;
 	color: #ffffff;
@@ -194,7 +198,28 @@ hr {
 	text-align: center;
 }
 
+.imageDiv {
+	height: 250px;
+	padding: 10px;
+	display: inline-block;
+	float: right;
+	margin: 0 40px 20px 0;
+}
+
+.projectImage {
+	border: 5px solid #3e3f41;
+	height: 100%;
+	max-height: 100%;
+}
+
 .doing {
+	float: left;
+	padding: 20px 10px 0px 40px;
+	margin-bottom: 20px;
+	width: 25vw;
+}
+
+.doingJob {
 	float: left;
 	padding: 20px 10px 0px 40px;
 	margin-bottom: 20px;
@@ -207,9 +232,9 @@ hr {
 }
 
 .doingsTools {
-	padding: 20px 0 0 20px;
-	float: right;
-	width: 25vw;
+	display: inline-block;
+	padding: 25px 0 0 20px;
+	width: 15vw;
 }
 
 #resume {
