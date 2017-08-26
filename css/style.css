@@ -21,7 +21,7 @@ body{
 	left: 0;
 	top: 0;
 	width: 25vw;
-	min-width: 200px;
+	min-width: 250px;
 	height: 100vh;
 	background-color: #FFF;
 	box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.4);
@@ -63,6 +63,10 @@ p.title {
 	font-size: 18px;
 }
 
+p.me-titles {
+	font-size: 12px;
+}
+w
 p.description{
 	opacity: 0;
 	color: #ffffff;

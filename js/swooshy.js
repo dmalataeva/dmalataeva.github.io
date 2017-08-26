@@ -38,7 +38,7 @@ copyEmail1.addEventListener('click', function(event) {
 });
 
 //======================SECOND==COPYLINK==LISTENER===============================
-var copyEmail2 = document.querySelector('.email2');
+/*var copyEmail2 = document.querySelector('.email2');
 copyEmail2.addEventListener('click', function(event) {
   // Select the email link anchor text
   var emailLink = document.querySelector('.email2');
@@ -57,7 +57,7 @@ copyEmail2.addEventListener('click', function(event) {
   // Remove the selections - NOTE: Should use
   // removeRange(range) when it is supported
   window.getSelection().removeAllRanges();
-});
+});*/
 
 //==============================================================================
 
