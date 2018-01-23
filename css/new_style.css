@@ -1,0 +1,33 @@
+body {
+	background-color: #212145;
+	overflow: hidden;
+	color: #FFF;
+	bottom: 0;
+	font-family: 'Inconsolata', monospace;
+	font-weight: lighter;
+}
+
+.navbar {
+	background-color: #FFF;
+	position: fixed;
+	top: 0;
+	height: 5vh;
+	width: 100vw;
+	color: #00b1cf;
+	border: 0px;
+	border-radius: 0px;
+}
+
+.navbar-list-div {
+	display: inline-block;
+	background-color: #000;
+	height: 100%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	text-decoration: none;
+}

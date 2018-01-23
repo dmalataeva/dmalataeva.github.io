@@ -67,35 +67,41 @@ p.me-titles {
 	font-size: 12px;
 }
 
-p.description{
+p.description {
 	opacity: 0;
 	color: #ffffff;
 	z-index: 600;
 }
 
-a{
+a {
 	text-decoration: none;
 	color: rgba(49, 51, 53, 1);
 }
 
-a:hover{
+a:hover {
 	color: #00b1cf;
 	text-decoration: none;
 	-webkit-transition-property: color;
 	-webkit-transition-duration: 0.3s;
 }
 
-a:visited{
+a:visited {
 	text-decoration: none;
 }
 
-.fa{
+.fa {
 	top: 10px;
 	bottom: 20px;
 }
 
 .fa-spotify {
 	margin: 40px 30px 5px 0px;
+}
+
+.fa-eye {
+	position: fixed;
+	top: 5vh;
+	right: 5vh;
 }
 
 #textIntro {
