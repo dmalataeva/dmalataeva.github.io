@@ -11,6 +11,10 @@ a {
 	color: #00b1cf;
 }
 
+a.resume {
+	color: #ff6666;
+}
+
 .nav {
 	top: 0;
 	height: 5vh;
