@@ -3,8 +3,7 @@ body {
 	overflow: hidden;
 	color: #FFF;
 	bottom: 0;
-	font-family: 'Inconsolata', monospace;
-	font-weight: lighter;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .navbar {
@@ -26,8 +25,32 @@ body {
 
 ul {
 	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	overflow: auto;
+	right: 0;
 }
 
 li {
 	text-decoration: none;
+	display: inline;
+	float: left;
+}
+
+li.nav-text {
+	padding: 2vh 5vh;
+}
+
+li.nav-text-last {
+	padding: 2vh 10vh 2vh 5vh;
+}
+
+li.nav-icon {
+	padding: 2vh 2vh;
+}
+
+li a {
+	display: block;
+	text-align: center;
 }
