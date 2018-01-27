@@ -9,7 +9,7 @@ body {
 
 a {
 	position: relative;
-	text-decoration: none;
+	text-decoration: none !important;
 	color: #666666;
 	display: block;
 	text-align: center;
@@ -30,11 +30,6 @@ li.nav-icon a:hover {
 li.nav-icon {
 	color: #666666;
 	-webkit-transition: color 0.5s;
-}
-
-a:visited {
-	text-decoration: none;
-	color: #666666;
 }
 
 .nav {
@@ -110,4 +105,11 @@ div#rect-resume {
 	bottom: 0.5vw;
 	margin-bottom: 0.1vw;
 	background-color: rgba(255, 102, 102, 0.5);
+}
+
+.license {
+	font-size: 0.8vw;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
 }
