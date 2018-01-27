@@ -3,16 +3,38 @@ body {
 	overflow: hidden;
 	bottom: 0;
 	font-family: 'Open Sans', sans-serif;
-	color: #00b1cf;
+	color: #000;
 	text-align: center;
 }
 
 a {
-	color: #00b1cf;
+	position: relative;
+	text-decoration: none;
+	color: #666666;
+	display: block;
+	text-align: center;
+	z-index: 100;
 }
 
-a.resume {
-	color: #ff6666;
+li.nav-text a:hover {
+	text-decoration: none;
+	color: #666666;
+}
+
+li.nav-icon a:hover {
+	text-decoration: none;
+	color: rgba(255, 102, 102, 0.8);
+	-webkit-transition: color 0.5s;
+}
+
+li.nav-icon {
+	color: #666666;
+	-webkit-transition: color 0.5s;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #666666;
 }
 
 .nav {
@@ -21,6 +43,7 @@ a.resume {
 	width: 100vw;
 	border: 0px;
 	border-radius: 0px;
+	font-size: 1vw;
 }
 
 ul.nav-list-left {
@@ -29,6 +52,7 @@ ul.nav-list-left {
 
 ul.nav-list-right {
 	right: 0;
+	padding-right: 2vh;
 }
 
 ul {
@@ -37,37 +61,53 @@ ul {
 	padding: 0;
 	position: fixed;
 	overflow: auto;
-	font-size: 16px;
 }
 
 li {
-	text-decoration: none;
 	display: inline;
 	float: left;
 }
 
 li.nav-text {
-	padding: 2vh 2vh;
+	padding: 4vh 4vh;
+	font-weight: bold;
 }
 
 li.nav-icon {
-	padding: 2vh 2vh;
-}
-
-li a {
-	display: block;
-	text-align: center;
+	padding: 4vh 2vh;
 }
 
 .big-name {
 	font-size: 5vh;
 	display: inline-block;
-	font-family: 'Oswald', sans-serif;
-	padding-top: 5vh;
+	font-family: 'Open Sans', sans-serif;
+	padding: 20vh 0 5vh 0;
+	font-weight: bold;
 }
 
 .intro {
 	height: 100vh;
 	width: 100vw;
-	background-color: #e2e2e2
+}
+
+.emoji {
+	padding-top: 5vh;
+	font-size: 20px;
+}
+
+div.nav-rect {
+	position: relative;
+	z-index: 90;
+	height: 0.5vw;
+	bottom: 0.5vw;
+	background-color: rgba(59, 252, 226, 0.5);
+}
+
+div#rect-resume {
+	position: relative;
+	z-index: 90;
+	height: 0.5vw;
+	bottom: 0.5vw;
+	margin-bottom: 0.1vw;
+	background-color: rgba(255, 102, 102, 0.5);
 }
