@@ -16,8 +16,8 @@ $("#link-software").hover(
 $("#link-art").hover(
 	function() {
 		$("#rect-art").animate({
-			height: "1vw",
-			bottom: "1vw"
+			height: "1.2vw",
+			bottom: "1.2vw"
 		}, "fast");
 	}, 
 	function() {
@@ -31,8 +31,8 @@ $("#link-art").hover(
 $("#link-about").hover(
 	function() {
 		$("#rect-about").animate({
-			height: "1vw",
-			bottom: "1vw"
+			height: "1.2vw",
+			bottom: "1.2vw"
 		}, "fast");
 	}, 
 	function() {
