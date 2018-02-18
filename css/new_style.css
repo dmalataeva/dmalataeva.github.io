@@ -110,6 +110,6 @@ div#rect-resume {
 .license {
 	font-size: 0.8vw;
     position: absolute;
-    bottom: 0;
+    bottom: 2vh;
     width: 100vw;
 }
