@@ -95,7 +95,7 @@ div.nav-rect {
 	z-index: 90;
 	height: 0.5vw;
 	bottom: 0.5vw;
-	background-color: rgba(59, 252, 226, 0.5);
+	background-color: rgba(26, 178, 255, 0.5);
 }
 
 div#rect-resume {
@@ -112,4 +112,10 @@ div#rect-resume {
     position: absolute;
     bottom: 2vh;
     width: 100vw;
+}
+
+#canvas-wrapper {
+	display: inline-block;
+	height: 10vw;
+	width: 10vw;
 }
