@@ -35,9 +35,9 @@ var material = new THREE.MeshPhongMaterial(
 );
 var mesh = new THREE.Mesh(shape, material);
 
-var ambient = new THREE.AmbientLight(0xFFFFFF, 1);
-var light = new THREE.DirectionalLight(0xFFFFFF, 0.5);
-var controls = new THREE.OrbitControls(camera, renderer.domElement);
+var ambient = new THREE.AmbientLight(0xFFFFFF, 0.5);
+var light = new THREE.DirectionalLight(0xFFFFFF, 1);
+var controls = new THREE.TrackballControls(camera);
 light.position.set(-15, 15, 15);
 
 scene.add(camera);
