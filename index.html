@@ -7,228 +7,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>dmalataeva</title>
+    <title>deniza.me</title>
 
     <!-- Bootstrap links -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 
-  <!--Importing these fonts-->
-  <script src="https://use.fontawesome.com/f340fcd75c.js"></script>
+	<!--Importing these fonts-->
+  <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed" rel="stylesheet">
 
-  <!--Trying out-->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Inconsolata" rel="stylesheet">
+	<!--Trying out-->
 
-  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link rel="shortcut icon" href="media/ico.png" type="image/png">
 
   </head>
 
   <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/three.js"></script>
+    <script src="js/OrbitControls.js"></script>
 
-  <!-- Introduction -->
-    <div id="sidebar">
-      <h1 id="introName">Deniza<br>Malataeva</h1>
-      <p class="me-titles">Computer Engineering 2020<br>University of Waterloo</p>
-      <div id="navbar">
-        <ul id="navbar-list">
-          <li onclick="goToInternships()">Internships</li>
-          <li onclick="goToProjects()">Projects</li>
-          <li onclick="goToSkills()">Skills & Interests</li>
-          <li onclick="goToTop()">Top</li>
-        </ul>
-      </div>
-      <a href="resume.pdf" target="_blank" style="color:#00b1cf" id="resume">Resume</a>
-      <div id="emails">
-      <p>Contact me!</p>
-      <p style="font-size:14px">(click to copy to clipboard)</p>
-      <a href="#_">
-        <div class="panel panel-default email1">
-          deniza.malataeva@gmail.com
-        </div>
-      </a>
-      <!--<a href="#_">
-        <div class="panel panel-default email2">
-          dmalatae@uwaterloo.ca
-        </div>
-      </a>-->
-      </div>
-      <div id="icons">
-        <a href="https://github.com/dmalataeva" target="_blank"><i class="fa fa-github fa-3x textChunk4" aria-hidden="true">
-        </i></a>
-        <a href="http://i.imgur.com/A5ASDAg.gif"><img src="favicon.png" style="padding: 0 10px 0 10px;height:60px"></a>
-        <a href="https://ca.linkedin.com/in/dmalataeva" target="_blank"><i class="fa fa-linkedin-square fa-3x textChunk5" aria-hidden="true"></i></a>
-      </div>
+    <div class="nav">
+      <ul class="nav-list-left">
+        <!--<li class="nav-text">
+          <a href="https://deniza.me/portfolio-software" id="link-about">
+            About
+          </a>
+          <div class="nav-rect" id="rect-about">
+          </div>
+        </li>-->
+        <li class="nav-text">
+          <a class="resume" href="https://deniza.me/resume.pdf" target="_blank" id="link-resume">
+            Resume
+          </a>
+          <div class="nav-rect" id="rect-resume">
+          </div>
+      </ul>
+      <ul class="nav-list-right">
+        </li>
+        <li class="nav-icon">
+          <a href="https://github.com/dmalataeva" target="_blank">
+            <i class="fab fa-github">
+            </i>
+          </a>
+        </li>
+        <li class="nav-icon">
+          <a href="https://ca.linkedin.com/in/dmalataeva" target="_blank">
+            <i class="fab fa-linkedin">
+            </i>
+          </a>
+        </li>
+        <li class="nav-icon">
+          <a href="https://www.behance.net/dmalataeva" target="_blank">
+            <i class="fab fa-behance">
+            </i>
+          </a>
+        </li>
+      </ul>
     </div>
 
-      <div id="center-body">
-        <div id="intro">
-          <p id="textIntro">Passionate about learning and applying.
-            <br>Constantly generating crazy ideas and improving myself in all ways possible.
-            <br>
-            <br>
-            Computer Engineering '2020, University of Waterloo
-          </p>
-          <span class="glyphicon glyphicon-triangle-bottom text-center" aria-hidden="true" id="introArrow"></span>
-        </div>
-        <div id="internships">
-          <h2>INTERNSHIPS</h2>
-          <div class="doingJob">
-            <p class="title"><a href="http://www.scribblelive.com/" style="color:#00b1cf" target="_blank">ScribbleLive</a> - Software Developing Intern</p>
-            <p class="doingsDate">May 2017 - August 2017</p>
-            <p class="doingsLocation">Toronto, Canada</p>
-            <p class="doingsDescription">During my returning co-op term at ScribbleLive, I have had the opportunity to hone my knowledge and profficiency in many software tools and frameworks, and learn how to successfully build and maintain single-page applications (SPA) and a microservice software infrastructure. I focused on leveraging existing features of the Engage platform, as well as adding new ones. Some of the features I added include the tag-searching capability in published streams, various elements and back-end logic for the direct messaging chat widget, and the enter-to-post functionality in the liveblog text-editor. I have also volunteered to plan activities and discussions for retrospective meetings, facilitating teambuilding and effective communication in a newly formed team.</p>
-          </div>
-          <hr>
-          <div class="doingJob">
-            <p class="title"><a href="http://www.scribblelive.com/" style="color:#00b1cf" target="_blank">ScribbleLive</a> - Software Testing Developer</p>
-            <p class="doingsDate">September 2016 - December 2016</p>
-            <p class="doingsLocation">Toronto, Canada</p>
-            <p class="doingsDescription">My primary duties were to test and continuously monitor the Engage platform for any defects and server errors. Observing the team's workflow and tendencies, I decided to introduce changes to the QA process and revise existing documentation. This successfully cut the time being spent on QA processes and allowed the team to focus more on its values and roadmap. I also had the opportunity to start and partially complete an automation testing project, which reduced QA time in every sprint considerably and is still being used and updated today.</p>
-          </div>
-          <hr>
-          <div class="doingJob">
-            <p class="title"><a href="https://www.genetec.com/" style="color:#00b1cf" target="_blank">Genetec</a> - Programmer Analyst</p>
-            <p class="doingsDate">January 2016 - April 2016</p>
-            <p class="doingsLocation">Montreal, Canada</p>
-            <p class="doingsDescription"> At Genetec, I scripted customizations into Dynamics CRM software and accelerated processes related to business logic and customer data, cooperated with team members on projects to fit the dynamically evolving needs of several company departments, and monitored and hotfixed bugs during deployment sessions to ensure that coordinated software rollouts were smooth and quick.</p>
-          </div>
-        </div>
-        <div id="projects">
-          <h2>PROJECTS</h2>
-          <div class="doing">
-            <p class="title"><a href='https://github.com/dmalataeva/Visualyrics' style="color:#00b1cf" target="_blank">Visualyrics</a></p>
-            <p class="doingsDate">2017</p>
-            <p class="doingsDescription">Visualyrics is an experimental implementation of machine learning in a web app. It analyzes song lyrics in terms of sentiment, the classification and quantity of each emotion, and outputs the result as a colour-corresponding visualization. It is then up to the user to guess the song.
-            </p>
-          </div>
-          <div class="doingsTools">
-            <p>Built using:</p>
-            <ul>
-              <li>Python</li>
-              <li>WebGL (Javascript)</li>
-              <li>Watson (IBM) API</li>
-              <li>Semantria (Lexalytics) API</li>
-              <li>Genius API</li>
-              <li>HTML & CSS</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="doing">
-            <p class="title"><a style="color:#00b1cf" target="_blank">EEG - Electroencephalograph</a></p>
-            <p class="doingsDate">2017</p>
-            <p class="doingsDescription">My passion in cognitive psychology prompted me to create an EEG. I found basic explanations for how EEG circuits work and designed my own digital circuit. The circuit reads voltage potential from three electrodes placed on the scalp and transmits it directly into a PC audio port. These readings can be visualized using simple sketch programs.</p>
-          </div>
-          <div class="doingsTools">
-            <p>Built using:</p>
-            <ul>
-              <li>Digital circuits</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="doing">
-            <p class="title"><a href='https://github.com/dmalataeva/chatboxsandbox' style="color:#00b1cf" target="_blank">Sandbox</a></p>
-            <p class="doingsDate">2016-2017</p>
-            <p class="doingsDescription">Sandbox is a bundle that creates a chat widget once it is hosted on Firebase. It can be integrated into any website with an embed code and has support for customizations and multiple-user chat rooms. This was created to solidify my knowledge and fluency in Javascript packages, websockets and Firebase.</p>
-          </div>
-          <div class="doingsTools">
-            <p>Built using:</p>
-            <ul>
-              <li>Javascript</li>
-              <li>React.js</li>
-              <li>SASS</li>
-              <li>Firebase</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="doing">
-            <p class="title"><a href='https://github.com/dmalataeva/Resourceful' style="color:#00b1cf" target="_blank">Resourceful</a></p>
-            <p class="doingsDate">2016</p>
-            <p class="doingsDescription">Integrated as an Amazon Echo skill, Resourceful is a programm which helps people find the perfect recipe based on the ingredients they already have at home. Resourceful's main purpose is to reduce food waste that is caused by unused raw foods and ingredients.
-            It is also able to accomodate special needs like allergies and dietary restrictions.</p>
-          </div>
-          <div class="doingsTools">
-            <p>Built using:</p>
-            <ul>
-              <li>Java</li>
-              <li>Amazon Echo</li>
-              <li>AWS</li>
-              <li>Edamam API</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="doing">
-            <p class="title"><a href='https://github.com/dmalataeva/brainiac' style="color:#00b1cf" target="_blank">Brainiac</a></p>
-            <p class="doingsDate">2014</p>
-            <p class="doingsDescription">An arcade-style game designed to help international students learn topics in English, Math, Chemistry, and Computer Science. It was 'virally' uploaded onto several computers in a highschool lab and thoroughly tested with the help and advice of subject experts (teachers).
-            </p>
-          </div>
-          <div class="doingsTools">
-            <p>Built using:</p>
-            <ul>
-              <li>Python</li>
-              <li>SmallBasic</li>
-              <li>Photoshop & Illustrator</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="doing">
-            <p class="title"><a href='https://github.com/dmalataeva/Wandaless' style="color:#00b1cf" target="_blank">Wandaless</a></p>
-            <p class="doingsDate">2016</p>
-            <p class="doingsDescription">Wandaless is a webapp that allows groups of people to collaborate on travel plans.
-            <br> Users can connect, chat real-time and democratically plan out their trip - all the way from starting point to finish.
-            </p>
-          </div>
-          <div class="doingsTools">
-            <p>Built using:</p>
-            <ul>
-              <li>Java</li>
-              <li>Javascript</li>
-              <li>Google Cloud Services</li>
-              <li>GoogleMaps API</li>
-              <li>Motion.ai (chatbot)</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="doing">
-            <p class="title"><a href='https://github.com/dmalataeva/Transactual' style="color:#00b1cf" target="_blank">Transactual</a></p>
-            <p class="doingsDate">2016</p>
-            <p class="doingsDescription">Transactual is designed to provide
-               people with day-to-day payment information with minimized software installation and configuration.
-               Any NFC activity on your phone triggers the scraping of information from receipts on your screen. Simply text the Transactual server to receive a list of your payments.</p>
-          </div>
-          <div class="doingsTools">
-            <p>Built using:</p>
-            <ul>
-              <li>Java for Android</li>
-              <li>ocr.space</li>
-              <li>PHP & MySQL</li>
-              <li>HTML & CSS</li>
-            </ul>
-          </div>
-        </div>
-        <h2  style="margin-top: 200px">INTERESTS</h2>
-        <div id="interests">
-          <ul>
-            <li>Rendering/Graphics Software</li>
-            <li>AI</li>
-            <li>Cognitive Science</li>
-            <li>Machine Learning Applications</li>
-            <li>Green Energy</li>
-            <li>Industrial Design</li>
-            <li>Concept Art</li>
-            <li>Philosophy</li>
-          </li>
-        </div>
-      </div>
+    <div class="intro">
+        <div class="big-name">Deniza Malataeva</div>
+        <div class="intro-text">
+          Computer Engineering @ UWaterloo.<br>
+          Software Enthusiast with a passion for graphics and cognitive science.<br>
+          View my software projects on <a href="https://github.com/dmalataeva" target="_blank">Github</a> and my art on <a href="https://www.behance.net/dmalataeva" target="_blank">Behance</a>.<br>
 
+        </div>
+        <div id="canvas-wrapper">
+          <script src="js/icosahedron.js"></script>
+        </div>
+        <div class="license">
+          Copyright (c) 2018 Deniza Malataeva
+        </div>
+    </div>
 
-    <!-- jQuery files -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Compiled plugins (js files) -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/swooshy.js"></script>
-
+    <script src="js/script.js"></script>
   </body>
-
-</html>
+  </html>

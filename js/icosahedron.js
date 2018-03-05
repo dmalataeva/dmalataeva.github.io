@@ -1,10 +1,12 @@
-var renderer = new THREE.WebGLRenderer( { antialias: true } );
 var canvas = document.getElementById("canvas-wrapper");
+
+var renderer = new THREE.WebGLRenderer( { antialias: true } );
 renderer.setSize(canvas.offsetWidth, canvas.offsetHeight);
+renderer.setClearColor(0xFFFFFF);
+
 canvas.appendChild(renderer.domElement);
 
 var scene = new THREE.Scene();
-renderer.setClearColor(0xFFFFFF);
 
 var camera = 
 new THREE.PerspectiveCamera( 
@@ -13,10 +15,11 @@ new THREE.PerspectiveCamera(
 	0.1, 
 	1000 
 );
-camera.position.z = 150;
+camera.position.z = 15;
 
+var controls = new THREE.OrbitControls(camera, renderer.domElement);
 
-var shape = new THREE.IcosahedronBufferGeometry(10);
+var shape = new THREE.IcosahedronBufferGeometry(1);
 var material = new THREE.MeshPhongMaterial(
 	{ 
 		color: 0x0088cc, 
@@ -30,14 +33,16 @@ var material = new THREE.MeshPhongMaterial(
 					 'car_pz.jpg', 
 					 'car_nz.jpg' 
 					 ] ), 
+		refractionRatio: 0.6,
 		reflectivity: 0.5 
 	}
 );
+material.envMap.mapping = THREE.CubeRefractionMapping;
+
 var mesh = new THREE.Mesh(shape, material);
 
-var ambient = new THREE.AmbientLight(0xFFFFFF, 0.5);
+var ambient = new THREE.AmbientLight(0xFFFFFF, 0.8);
 var light = new THREE.DirectionalLight(0xFFFFFF, 1);
-var controls = new THREE.TrackballControls(camera);
 light.position.set(-15, 15, 15);
 
 scene.add(camera);
@@ -46,8 +51,6 @@ scene.add(ambient);
 scene.add(light);
 
 animateMesh();
-
-//console.log("If you see this, I'm working");
 
 function animateMesh() {
 	requestAnimationFrame(animateMesh);
