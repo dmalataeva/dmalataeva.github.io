@@ -17,13 +17,15 @@ body {
 
 .big-name {
   font-size: 36px;
-  max-font-size: 48px;
-  min-font-size: 24px;
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
   padding: 20vh 0 2vh 0;
   font-weight: bold;
   white-space: nowrap; }
+  @media screen and (max-width: 450px) {
+    .big-name {
+      font-size: 24px;
+      padding: 10vh 0 2vh 0; } }
 
 .intro {
   height: 100vh;
@@ -39,7 +41,7 @@ body {
     .intro-text {
       font-size: 12px;
       padding: 0 5px 0 5px;
-      width: 250px;
+      width: 80vw;
       white-space: normal; } }
 
 .license {
@@ -114,9 +116,9 @@ a.highlighted {
 #canvas-wrapper {
   display: inline-block;
   margin: auto;
-  height: 20vw;
-  width: 20vw; }
+  height: 15vw;
+  width: 15vw; }
   @media screen and (max-width: 450px) {
     #canvas-wrapper {
-      height: 300px;
-      width: 300px; } }
+      height: 80vw;
+      width: 80vw; } }
