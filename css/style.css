@@ -1,10 +1,16 @@
+@media screen and (min-width: 400px) {
+  body {
+    font-size: 10px; } }
+
 body {
-  background-color: #fff;
-  overflow: hidden;
-  margin: 10px;
+  background-color: #FFF;
+  overflow-y: hidden;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  min-font-size: 8px;
+  min-font-size: 16px;
   max-font-size: 16px;
   color: #000;
   text-align: center; }
@@ -16,7 +22,8 @@ body {
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
   padding: 20vh 0 2vh 0;
-  font-weight: bold; }
+  font-weight: bold;
+  white-space: nowrap; }
 
 .intro {
   height: 100vh;
@@ -25,16 +32,28 @@ body {
 .intro-text {
   padding: 0 0 2vh 0;
   font-size: 16px;
-  max-font-size: 16px;
-  min-font-size: 8px; }
+  white-space: nowrap;
+  display: block;
+  margin: auto; }
+  @media screen and (max-width: 450px) {
+    .intro-text {
+      font-size: 12px;
+      padding: 0 5px 0 5px;
+      width: 250px;
+      white-space: normal; } }
 
 .license {
-  font-size: 0.8vw;
-  min-font-size: 6px;
-  max-font-size: 0.8vw;
+  text-align: center;
+  font-size: 12px;
   position: absolute;
-  bottom: 2vh;
-  width: 100vw; }
+  bottom: 0;
+  padding: 0 0 5px 0;
+  width: 100vw;
+  white-space: nowrap;
+  color: #666666; }
+  @media screen and (max-width: 450px) {
+    .license {
+      font-size: 12px; } }
 
 li {
   display: inline-block; }
@@ -50,8 +69,8 @@ div.nav {
   top: 0;
   height: 5vh;
   width: 100vw;
-  border: 0px;
-  border-radius: 0px;
+  border: 0;
+  border-radius: 0;
   font-size: 16px;
   min-font-size: 8px;
   max-font-size: 16px; }
@@ -68,7 +87,7 @@ div.nav {
     div.nav ul.nav-list-right li.nav-icon {
       color: #666666;
       -webkit-transition: color 0.5s;
-      padding: 10px 5px; }
+      padding: 0 5px; }
       div.nav ul.nav-list-right li.nav-icon a:hover {
         color: #16AED6;
         -webkit-transition: color 0.5s; }
@@ -79,12 +98,12 @@ a {
   text-align: center;
   z-index: 100;
   text-decoration: none !important;
-  font-weight: bold;
   color: #666666; }
   a:hover {
     text-decoration: none; }
 
 a.highlighted {
+  font-weight: bold;
   transition: all .5s ease-in-out;
   box-sizing: border-box;
   box-shadow: inset 0 -5px 0 rgba(22, 174, 214, 0.5); }
@@ -94,5 +113,10 @@ a.highlighted {
 
 #canvas-wrapper {
   display: inline-block;
-  height: 10vw;
-  width: 10vw; }
+  margin: auto;
+  height: 20vw;
+  width: 20vw; }
+  @media screen and (max-width: 450px) {
+    #canvas-wrapper {
+      height: 300px;
+      width: 300px; } }
