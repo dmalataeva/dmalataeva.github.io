@@ -27,3 +27,33 @@ $("#link-resume").hover(
 		}, "fast");
 	}
 );
+
+$("#link-github").hover(
+    function() {
+        $("#rect-github").animate({
+            height: "1.2vw",
+            bottom: "1.2vw"
+        }, "fast");
+    },
+    function() {
+        $("#rect-github").animate({
+            height: "0.5vw",
+            bottom: "0.5vw"
+        }, "fast");
+    }
+);
+
+$("#link-behance").hover(
+    function() {
+        $("#rect-behance").animate({
+            height: "1.2vw",
+            bottom: "1.2vw"
+        }, "fast");
+    },
+    function() {
+        $("#rect-behance").animate({
+            height: "0.5vw",
+            bottom: "0.5vw"
+        }, "fast");
+    }
+);
